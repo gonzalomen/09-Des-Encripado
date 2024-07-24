@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Des-Encriptado</title>
+    <link rel="shortcut icon" href="img/des encriptar.svg" type="image/x-icon">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <!-- foonts family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img class="logo" src="img/alura-logo.svg" alt="Logo de Alura">
+        </header> 
+        <main class="main__container">
+            <form class="formulario__encriptar">
+                <textarea class="formulario__encriptar__texto" id="frase" placeholder="Ingrese texto para encriptar" required></textarea>
+                <div class="formulario__encriptar__aviso">
+                    <span class="formulario__icono"> <img src="img/exclamacion.svg" alt=""></span>
+                    <p class="formulario__parrafo">Solo se permiten letras minusculas y sin acentos </p>
+                </div>
+                <div class="formulario__encriptar__botones" >
+                    <input class="boton boton__encriptar" id="boton-encriptar" value="Encriptar" type="button">
+                    <input class="boton boton__desencriptar" id="boton-desencriptar" value="Desencriptar" type="button">
+                </div>
+            </form>
+            <section class="seccion__desencriptar" >
+                <div class="seccion__desencriptar__mensaje">
+                    <img src="img/Muñeco.svg" alt="Muñeco Logo" class="desencriptar__mensaje__muñeco">
+                    <h2 class="desencriptar__mensaje__titulo">Ningún mensaje fue encontrado</h2>
+                    <p class="desencriptar__mensaje__parrafo">Ingrese el texto que sees encriptar o desencriptar</p>
+                </div>
+                <div class="desencriptar__resultado">
+                    <textarea id="frase-encriptada" class="frase__encriptada" readonly ></textarea>
+                    <input class="boton boton__copiar" id="boton-copiar" type="button" value="Copiar">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="copyright" >Por GonMen &copy; para DesafioAlura 2024</p>
+            <div class="links__container">
+                <a class="link" href="https://www.linkedin.com/in/gonzalo-mendoza-a33262243" target="_blank">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+                <a class="link" href="https://github.com/" target="_blank" >
+                    <i class='bx bxl-github'></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
